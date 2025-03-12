@@ -1,4 +1,91 @@
+/* Gothic-inspired CSS */
 body {
-    font-family: Arial, sans-serif;
+    color: #e0e0e0; /* Light gray text for readability */
+    background: #1a1a1a; /* Dark background for gothic vibe */
+    font-family: 'Georgia', serif; /* Serif font for a classic, gothic feel */
     text-align: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif; /* Gothic-style font for header */
+    color: #8b0000; /* Deep maroon for the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+    letter-spacing: 2px; /* Spaced-out letters for a dramatic effect */
+}
+
+form {
+    margin-bottom: 30px;
+    background: rgba(44, 44, 44, 0.8); /* Dark semi-transparent background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #8b0000; /* Maroon border */
+    border-radius: 8px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0; /* Light gray text */
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #8b0000; /* Maroon placeholder text */
+    opacity: 0.7;
+}
+
+.book-card {
+    border: 1px solid #8b0000; /* Maroon border */
+    padding: 20px;
+    margin: 20px auto;
+    width: 250px;
+    background: #2c2c2c; /* Dark gray background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.5); /* Maroon shadow on hover */
+}
+
+button {
+    color: #e0e0e0; /* Light gray text */
+    background: #8b0000; /* Maroon background */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #6b0000; /* Darker maroon on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Additional accent color for contrast */
+.accent {
+    color: #d4af37; /* Gold accent for highlights */
 }

@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Library</title>
+    <title>My Library</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Odin Library</h1>
+    <h1>My Library</h1>
+
+    <!-- New Book Button -->
+    <button id="new-book-btn">New Book</button>
+
+    <!-- New Book Form -->
+    <dialog id="book-dialog">
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <label>
+                <input type="checkbox" id="read"> Read
+            </label>
+            <button type="submit">Add Book</button>
+            <button type="button" id="close-dialog">Cancel</button>
+        </form>
+    </dialog>
+
+    <!-- Book Display Table -->
+    <table id="library-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Read</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="library-body"></tbody>
+    </table>
+
     <script src="script.js"></script>
 </body>
 </html>
